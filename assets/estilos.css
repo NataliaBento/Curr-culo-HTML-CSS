@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #240046;
+}
+
+.header__logo img {
+    border-radius: 50%;
+}
+
+.header__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.header__menu li {
+    display: inline-block;
+}
+
+.header__menu li a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header__menu li a:hover {
+    color: #FF81F2;
+}
+
+/* Main */
+main {
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Footer */
+.footer {
+    background-color: #240046;
+    color: #FFD700;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
