@@ -4,7 +4,7 @@
     padding: 0;
     height: auto;
 }
-/* Estilos básicos */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -13,7 +13,6 @@ body {
     color: #333;
 }
 
-/* Cabeçalho */
 .header {
     display: flex;
     justify-content: space-between;
@@ -40,6 +39,7 @@ body {
     color: #FFD700;
     text-decoration: none;
     font-weight: bold;
+    font-size: 25pt;
 }
 
 .header__menu li a:hover {
@@ -52,14 +52,34 @@ main {
     background-color: #fff;
 }
 
+.cursos-conteudo{
+    padding: 20px;
+    font-size: 20pt;
+}
+
+.experiencia-conteudo{
+    padding: 20px;
+    font-size: 20pt;
+}
+.conquistas-conteudo{
+    padding: 20px;
+    font-size: 20pt;
+}
+
+.linguas{
+    padding: 20px;
+    font-size: 20pt;
+}
+
 /* Footer */
 .footer {
     background-color: #240046;
     color: #FFD700;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 15pt;
 }
 
