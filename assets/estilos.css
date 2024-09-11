@@ -71,6 +71,11 @@ main {
     font-size: 20pt;
 }
 
+.contato{
+    padding: 20px;
+    font-size: 20pt;
+}
+
 /* Footer */
 .footer {
     background-color: #240046;
