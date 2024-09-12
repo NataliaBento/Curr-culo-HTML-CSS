@@ -1,5 +1,4 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
     height: auto;
@@ -13,6 +12,7 @@ body {
     color: #333;
 }
 
+/* Estilos gerais do header */
 .header {
     display: flex;
     justify-content: space-between;
@@ -21,10 +21,25 @@ body {
     background-color: #240046;
 }
 
-.header__logo img {
-    border-radius: 50%;
+.header__logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.header__logo img {
+    max-width: 350px;
+    height: auto;
+    border-radius: 100%;
+}
+
+.portifolio {
+    margin-left: 20px;
+    font-size: 1.5rem;
+    white-space: nowrap;
+}
+
+/* Menu do header */
 .header__menu {
     list-style: none;
     display: flex;
@@ -52,26 +67,11 @@ main {
     background-color: #fff;
 }
 
-.cursos-conteudo{
-    padding: 20px;
-    font-size: 20pt;
-}
-
-.experiencia-conteudo{
-    padding: 20px;
-    font-size: 20pt;
-}
-.conquistas-conteudo{
-    padding: 20px;
-    font-size: 20pt;
-}
-
-.linguas{
-    padding: 20px;
-    font-size: 20pt;
-}
-
-.contato{
+.cursos-conteudo, 
+.experiencia-conteudo, 
+.conquistas-conteudo, 
+.linguas-conteudo, 
+.contato {
     padding: 20px;
     font-size: 20pt;
 }
@@ -87,4 +87,84 @@ main {
     width: 100%;
     font-size: 15pt;
 }
+
+/* Responsividade */
+/* Para telas menores que 1024px */
+@media (max-width: 1024px) {
+    .header__menu li a {
+        font-size: 20pt;
+    }
+    .portifolio {
+        font-size: 1.2rem;
+    }
+}
+
+/* Para telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header__logo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__menu li {
+        margin-bottom: 10px;
+    }
+
+    .header__menu li a {
+        font-size: 18pt;
+    }
+
+    .portifolio {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .cursos-conteudo, 
+    .experiencia-conteudo, 
+    .conquistas-conteudo, 
+    .linguas, 
+    .contato {
+        font-size: 18pt;
+    }
+}
+
+/* Para telas menores que 480px (smartphones) */
+@media (max-width: 480px) {
+    .header__menu li a {
+        font-size: 16pt;
+    }
+
+    .portifolio {
+        font-size: 1rem;
+    }
+
+    .cursos-conteudo, 
+    .experiencia-conteudo, 
+    .conquistas-conteudo, 
+    .linguas, 
+    .contato {
+        font-size: 16pt;
+    }
+
+    footer {
+        font-size: 14pt;
+    }
+}
+
+
 
