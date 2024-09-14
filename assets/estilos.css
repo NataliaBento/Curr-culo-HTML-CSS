@@ -4,6 +4,10 @@
     height: auto;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -70,12 +74,36 @@ main {
 .cursos-conteudo, 
 .experiencia-conteudo, 
 .conquistas-conteudo, 
-.linguas-conteudo, 
-.contato {
+.linguas-conteudo {
     padding: 20px;
     font-size: 20pt;
 }
 
+.redes-sociais{
+    background-color: #240046;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+    bottom: 0;
+    
+}
+
+.redes-sociais img{
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: white;
+padding: 10px;
+box-sizing: border-box;
+transition: transform 0.3 ease, background-color 0.3 ease;
+
+}
+
+.redes-sociais img:hover{
+    transform: scale(1.1);
+    background-color: #FFD700;
+}
 /* Footer */
 .footer {
     background-color: #240046;
@@ -96,50 +124,6 @@ main {
     }
     .portifolio {
         font-size: 1.2rem;
-    }
-}
-
-/* Para telas menores que 768px (tablets) */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .header__logo {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .header__menu {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .header__menu li {
-        margin-bottom: 10px;
-    }
-
-    .header__menu li a {
-        font-size: 18pt;
-    }
-
-    .portifolio {
-        margin-left: 0;
-        font-size: 1.2rem;
-    }
-
-    main {
-        padding: 10px;
-    }
-
-    .cursos-conteudo, 
-    .experiencia-conteudo, 
-    .conquistas-conteudo, 
-    .linguas, 
-    .contato {
-        font-size: 18pt;
     }
 }
 
