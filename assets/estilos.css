@@ -28,9 +28,22 @@ body {
 .header__logo {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    width: 100%;
 }
 
+.header__logo h1{
+    margin: 800;
+}
+.header__logo a.hobbies-link {
+    color: #FFD700;
+    font-size: 80px;
+    text-decoration: none;
+    margin-left: auto; /* Move o link para o lado direito */
+}
+.header__logo a.hobbies-link:hover {
+    color: #FF81F2;
+}
 .header__logo img {
     max-width: 350px;
     height: auto;
@@ -71,6 +84,8 @@ main {
     background-color: #fff;
 }
 
+
+
 .cursos-conteudo, 
 .experiencia-conteudo, 
 .conquistas-conteudo, 
@@ -104,20 +119,19 @@ transition: transform 0.3 ease, background-color 0.3 ease;
     transform: scale(1.1);
     background-color: #FFD700;
 }
-/* Footer */
+
 .footer {
     background-color: #240046;
     color: #FFD700;
     text-align: center;
     padding: 10px 0;
-    position: relative;
+    position: static;
     bottom: 0;
     width: 100%;
     font-size: 15pt;
 }
 
-/* Responsividade */
-/* Para telas menores que 1024px */
+
 @media (max-width: 1024px) {
     .header__menu li a {
         font-size: 20pt;
@@ -127,7 +141,7 @@ transition: transform 0.3 ease, background-color 0.3 ease;
     }
 }
 
-/* Para telas menores que 480px (smartphones) */
+
 @media (max-width: 480px) {
     .header__menu li a {
         font-size: 16pt;
@@ -149,6 +163,7 @@ transition: transform 0.3 ease, background-color 0.3 ease;
         font-size: 14pt;
     }
 }
+
 
 
 
